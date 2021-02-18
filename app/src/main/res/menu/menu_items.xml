@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/opt_inputformat"
+        android:title="Format: Ascii"/>
+    <item android:id="@+id/opt_eolselect"
+        android:title="EOL: None"/>
+    <item android:id="@+id/opt_clear"
+        android:title="Clear Screen"/>
+</menu>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">BLE Terminal App</string>
+    <string name="beacon">ibeacon</string>
+    <string name="beaconname">Beacon Name</string>
+    <string name="beaconmac">MAC Address</string>
+    <string name="beaconsub">Subtitle</string>
+    <string name="beacondata">Data</string>
+
+
+    <string name="time_icon">Time</string>
+    <string name="temp_icon">Temperature</string>
+    <string name="hum_icon">Humidity</string>
+    <string name="light_icon">Light</string>
+    <string name="air_icon">Air</string>
+    <string name="sound_icon">Sound</string>
+    <string name="accx_icon">AccX</string>
+    <string name="accy_icon">AccY</string>
+    <string name="accz_icon">AccZ</string>
+    <string name="electricity_icon">Electricity</string>
+    <string name="txpower_icon">TXPower</string>
+    <string name="c02_icon">C02</string>
+
+
+    <string name="name_place">Name</string>
+    <string name="mac_place">00:00:00:00</string>
+    <string name="rssi_place">-00</string>
+    <string name="seq_place">0</string>
+    <string name="time_place">Time</string>
+    <string name="temp_place">Temperature</string>
+    <string name="hum_place">Humidity</string>
+    <string name="light_place">Light</string>
+    <string name="air_place">Air</string>
+    <string name="sound_place">Sound</string>
+    <string name="accx_place">AccX</string>
+    <string name="accy_place">AccY</string>
+    <string name="accz_place">AccZ</string>
+    <string name="electricity_place">Electricity</string>
+    <string name="txpower_place">TXPower</string>
+    <string name="c02_place">C02</string>
+
+
+    <string-array name="input_formats">
+        <item>Ascii</item>
+        <item>Hex</item>
+    </string-array>
+    <string-array name="line_finishers">
+        <item>None</item>
+        <item>CR</item>
+        <item>LF</item>
+        <item>CR+LF</item>
+    </string-array>
+</resources>

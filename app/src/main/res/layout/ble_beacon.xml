@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/beacon_info">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ble_beacon_name"
+                android:textStyle="bold"
+                android:text="@string/name_place"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beacon_mac"
+                android:text="@string/mac_place"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beacon_sequence"
+                android:text="@string/seq_place"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beacon_rssi"
+                android:text="@string/rssi_place"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:useDefaultMargins="true"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/time"
+                android:contentDescription="@string/time_icon"/>
+
+            <TextView
+                android:id="@+id/time_lbl"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="2"
+                android:layout_margin="10dp"
+                android:text="@string/time_place"/>
+
+
+            <ImageView
+                android:id="@+id/accX_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/accx"
+                android:contentDescription="@string/accx_icon"
+                />
+
+            <TextView android:id="@+id/accx_lbl"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="2"
+                android:layout_margin="10dp"
+                android:text="@string/accx_place"/>
+
+            <ImageView
+                android:id="@+id/temp_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/temp"
+                android:contentDescription="@string/temp_icon" />
+
+            <TextView
+                android:id="@+id/temp_lbl"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="2"
+                android:text="@string/temp_place"/>
+
+            <ImageView
+                android:id="@+id/accY_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/accy"
+                android:contentDescription="@string/accy_icon"/>
+
+            <TextView
+                android:id="@+id/accy_lbl"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_columnWeight="2"
+                android:text="@string/accy_place"/>
+
+            <ImageView
+                android:id="@+id/hum_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/humidity"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/hum_icon" />
+
+            <TextView
+                android:id="@+id/hum_lbl"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/hum_place"/>
+
+            <ImageView
+                android:id="@+id/accZ_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/accz"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/accz_icon"/>
+
+            <TextView android:id="@+id/accZ_lbl"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/accz_place"/>
+
+            <ImageView
+                android:id="@+id/light_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/light"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/light_icon"/>
+
+            <TextView android:id="@+id/light_lbl"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/light_place"/>
+
+
+            <ImageView
+                android:id="@+id/electricity_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/electricity"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/electricity_icon"/>
+
+            <TextView
+                android:id="@+id/electricity_lbl"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/electricity_place"/>
+
+
+            <ImageView
+                android:id="@+id/air_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/air_pressure"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/air_icon"/>
+
+            <TextView
+                android:id="@+id/air_lbl"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/air_place"/>
+
+
+            <ImageView
+                android:id="@+id/txpower_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/txpower"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/txpower_icon"/>
+
+
+            <TextView
+                android:id="@+id/txpower_lbl"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/txpower_place"/>
+
+            <ImageView
+                android:id="@+id/sound_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/sound"
+                android:contentDescription="@string/sound_icon"/>
+
+
+            <TextView
+                android:id="@+id/sound_lbl"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/sound_place"/>
+
+            <ImageView
+                android:id="@+id/co2_icon"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/co2"
+                android:contentDescription="@string/c02_icon"/>
+
+            <TextView
+                android:id="@+id/co2_lbl"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/c02_place"/>
+
+        </GridLayout>
+
+
+
+
+</LinearLayout>

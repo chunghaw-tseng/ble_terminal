@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@mipmap/ibeacon_icon"
+        android:id="@+id/device_icon"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:text="Device Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/device_name"
+        android:layout_toRightOf="@id/device_icon"
+        android:layout_alignTop="@+id/device_icon" />
+
+    <TextView
+        android:text="Device Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/device_address"
+        android:layout_toRightOf="@id/device_icon"
+        android:layout_alignBottom="@id/device_icon"/>
+
+    <TextView
+        android:text="RSSI"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/device_rssi"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@id/device_icon"
+        android:layout_marginBottom="7dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/p_uuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_icon"
+        android:text="proximity UUID" />
+
+    <TextView
+        android:id="@+id/major"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_uuid"
+        android:text="Major" />
+
+    <TextView
+        android:id="@+id/minor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/p_uuid"
+        android:layout_toRightOf="@+id/major"
+        android:gravity="left"
+        android:text="Minor" />
+
+    <TextView
+        android:id="@+id/power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minor"
+        android:text="Measured power" />
+
+
+</RelativeLayout>
